@@ -1,0 +1,21 @@
+[[redirects]]
+  from = "/old-path"
+  to = "/new-path"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/news/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/fr/contact"
+  status = 302
+  conditions = {Country = ["fr"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
